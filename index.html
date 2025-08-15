@@ -1,120 +1,123 @@
 <!DOCTYPE HTML>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title>Máscaras del Simbionte</title>
     <meta name="description" content="Venta de máscaras de Spider-Man">
     <meta name="keywords" content="venta de máscaras de superhéroes">
-
     <style>
         body {
             background-color: blue;
-            text-align: center;
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
         }
-
         h1 {
             background-color: red;
             padding: 20px;
-            color: white;
         }
-
         p {
             padding: 0 20px;
         }
-
         .galeria {
+            flex: 1;
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             max-width: 1000px;
             margin: 40px auto;
         }
-
         .galeria-item {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
         .galeria-item img {
             width: 160px;
             height: 200px;
             object-fit: cover;
             margin-bottom: 10px;
         }
-
-        .contacto {
-            margin-top: 40px;
+        .galeria-item button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
         }
-
+        .galeria-item button:hover {
+            background-color: darkred;
+        }
+        .contacto {
+            margin-top: 20px;
+        }
         .contacto img {
             vertical-align: middle;
         }
-
+        footer {
+            background-color: red;
+            padding: 15px;
+            font-size: 14px;
+        }
     </style>
 </head>
-
 <body>
 
     <h1>MÁSCARAS DEL SIMBIONTE</h1>
 
     <p>¡Encuentra a la venta tus máscaras favoritas del superhéroe arácnido! Desde Monterrey, Nuevo León, elaboramos manualmente máscaras de tela con diseños de distintas versiones de Spider-Man a lo largo de cómics, videojuegos y películas.</p>
 
-    <img src="MdS.jpg" width="400" height="400" alt="Máscara del Simbionte" />
+    <img src="MdS.jpg" width="400" height="400" alt="Máscara del Simbionte">
 
     <h2>¿Cuáles diseños puedes encontrar en nuestra tienda?</h2>
 
     <div class="galeria">
         <div class="galeria-item">
             <img src="Spidey PS4.jpg" alt="Spider-Man PS4">
-            <span>Spider-Man PS4</span>
+            <a href="spidey_ps4.html"><button>Spider-Man PS4</button></a>
         </div>
         <div class="galeria-item">
             <img src="Miles PS5.jpg" alt="Miles Morales PS5">
-            <span>Miles Morales PS5</span>
+            <a href="miles_ps5.html"><button>Miles Morales PS5</button></a>
         </div>
         <div class="galeria-item">
             <img src="TASM 2.jpg" alt="The Amazing Spider-Man 2">
-            <span>The Amazing Spider-Man 2</span>
+            <a href="tasm_2.html"><button>The Amazing Spider-Man 2</button></a>
         </div>
         <div class="galeria-item">
-            <img src="Tobey SM.jpg" alt="Tobey Spider-Man">
-            <span>Spider-Man Tobey suit</span>
+            <img src="Tobey SM.jpg" alt="Spider-Man Tobey suit">
+            <a href="tobey_sm.html"><button>Spider-Man Tobey suit</button></a>
         </div>
         <div class="galeria-item">
             <img src="SM NWH.jpg" alt="Spider-Man No Way Home">
-            <span>Spider-Man No Way Home</span>
+            <a href="sm_nwh.html"><button>Spider-Man No Way Home</button></a>
         </div>
         <div class="galeria-item">
-            <img src="Miles ITSV.jpg" alt="Miles Morales ITSV">
-            <span>Miles Morales Into the Spider-Verse</span>
+            <img src="Miles ITSV.jpg" alt="Miles Morales Into the Spider-Verse">
+            <a href="miles_itsv.html"><button>Miles Morales Into the Spider-Verse</button></a>
         </div>
         <div class="galeria-item">
             <img src="Punk ITSV.jpg" alt="Spider-Punk">
-            <span>Spider-Punk</span>
+            <a href="punk_itsv.html"><button>Spider-Punk</button></a>
         </div>
     </div>
 
     <div class="contacto">
         <p>Para más información de precios y materiales, favor de comunicarse por alguna de nuestras redes sociales:</p>
-
         <p><img src="wsp logo.jpg" width="100" height="60" alt="Whatsapp"> 81 1323 6999</p>
-
         <p><img src="fb logo.jpg" width="140" height="60" alt="Facebook"> Máscaras del Simbionte</p>
     </div>
 
+    <footer>
+        Hechas 100% en Monterrey, Nuevo León por Iván S. García
+    </footer>
+
 </body>
-
 </html>
-
-
-
-
-
-
-
